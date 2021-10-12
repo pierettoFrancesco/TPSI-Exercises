@@ -1,0 +1,65 @@
+<!DOCTYPE html> 		<!--documento html5-->
+<html lang="it">
+	<head>
+			<meta charset="UTF-8" />
+			<title>  Commenti  </title>
+	</head>
+	<body>
+		<table align="center" width="65%" border="1">
+		 <tr align="center">
+			<th Rowspan="2" Colspan="1" width="10%" > Roberto Benigni </th>
+			<th Colspan="8" width="80%"> Altri Film </th>
+		 </tr>
+		 <tr align="center">
+			<th Colspan="3" width="25%"> Titolo </th>
+			<th Colspan="5"> Descrizione </th>
+		 </tr>
+		 <tr align="left">
+		    <td align="center"> 1988 </td>
+			<th Colspan="3"> <i> Il piccolo diavolo </i> </th>
+			<td Colspan="5" > Padre Maurizio viene chiamato a compiere un esorcismo per liberare 
+			     una donna dall'essere che la stava possedendo.
+		    </td>
+		 </tr>
+		 <tr align="left">
+		    <td align="center"> 1994 </td>
+			<th Colspan="3"> <i> Il mostro </i> </th>
+			<td Colspan="5"> Loris è un giovane disoccupato che si guadagna da vivere con lavori saltuari. 
+			     Una serie di equivoci porta la polizia a sospettare che Loris sia il maniaco sessuale 
+			     e serial killer di donne che terrorizza il quartiere.
+			</td>
+		 </tr>
+		  <tr align="left">
+		    <td align="center"> 2005 </td>
+			<th Colspan="3"> <i> La tigre e la neve </i> </th>
+			<td Colspan="5">Attilio de Giovanni, svagato ed estroso professore di poesia,
+			divorziato e padre di due preadolescenti, è innamorato perdutamente di Vittoria, 
+			una scrittrice che gli appare in sogno tutte le notti.
+			</td>
+		 </tr>
+		</table>
+		<br/>
+		<form>
+			<label for="txtNome"> Quale tra i film precedenti ri è piaciuto di più </lable>
+			<input type="text" id="txtNome" size="50" maxlength="12" required autocomplete="off" />
+			<br/><br/>
+			<span>Lo hai visto al Cinema?</span>
+			<label for="optSi"> Si </lable>
+			<input type="radio" id="optSi" name="optCinema" required autocomplete="off" />
+			&nbsp;&nbsp;
+			<label for="optNo"> No </lable>
+			&nbsp;
+			<input type="radio" id="optSNo" name="optCinema" required autocomplete="off" />
+			<br/><br/>
+			<span>Lo hai visto più volte?</span>
+			<label for="chkSi"> Si </lable>
+			<input type="checkbox" id="chkSi" name="chkCinema" required autocomplete="off" />
+			<br/>
+			<label for="Voltetxt"> Assegna un voto da 1 a 10  </lable>
+			<input type="number" id="txtVolte" min="1" max="10" required autocomplete="off" />
+			<button> Invia </button>
+			<a href="index.html"> <img src="ritorna.gif"> </a>
+		</form>	
+			
+	</body>
+</html>	

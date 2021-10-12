@@ -1,0 +1,62 @@
+<!DOCTYPE html> 		<!--documento html5-->
+<html lang="it">
+	<head>
+			<meta charset="UTF-8" />
+			<title>  Es_11  </title>
+	</head>
+	<body>
+		<h1 align="center"> Pagina di registrazione </h1>
+		<form action="pagina2.html">
+			<label for="txtNome"> Nome: </lable>
+			<input type="text" id="txtNome" size="50" maxlength="12" required autocomplete="off" placeholder="Inserisci il tuo nome"  />
+			<br/><br/>
+			<label for="txtCognome"> Cognome: </lable>
+			<input type="text" id="txtCognome" size="50" maxlength="12" required autocomplete="off" placeholder="Inserisci il tuo cognome"  />
+			<br/><br/>
+			<label for="txtPassword"> Password: </lable>
+			<input type="password" id="txtPassword" size="50" maxlength="12" required autocomplete="off" placeholder="Inserisci la password"  />
+			<br/><br/>
+			<label for="txtEta"> Età: </lable>
+			<input type="number" id="txtEta" min="18" max="50" size="50" required autocomplete="off" placeholder="Inserisci la tua età"  />
+			<br/><br/>
+			<label for="txtImmagine"> Immagine profilo: </lable>
+			<input type="file" id="txtImmagine" size="50" required autocomplete="off" />
+			<br/><br/>
+			<p>Hobbies</p>
+			<label for="chkSport"> Sport </lable>
+			<input type="checkbox" id="chkSport" />
+			&nbsp;&nbsp;&nbsp;
+			<label for="chkCinema"> Cinema</lable>
+			<input type="checkbox" id="chkCinema" />
+			&nbsp;&nbsp;&nbsp;
+			<label for="chkInformatica"> Informatica </lable>
+			<input type="checkbox" id="chkInformatica" />
+			<p>Scuola</p>
+			<label for="optItis"> ITIS </lable>
+			<input type="radio" id="optItis" name="optScuola" required autocomplete="off" />
+			&nbsp;&nbsp;&nbsp;
+			<label for="optRagioneria"> Ragioneria</lable>
+			<input type="radio" id="optRagioneria" name="optScuola" required autocomplete="off" />
+			&nbsp;&nbsp;&nbsp;
+			<label for="optIpsia"> IPSIA </lable>
+			<input type="radio" id="optIpsia" name="optScuola" required autocomplete="off" />
+			<br/><br/>
+			<label for="txtCommenti"> Commenti </label>
+			<textarea id="txtCommenti" placeholder="Inserisci qua i tuoi commenti" cols="30" autocomplete="off"> </textarea>
+			<br/><br/>
+			<label for="lstProvincia"> Provincia di residenza </label>
+			<select id="lstProvincia">
+				<option> Cuneo </option>
+				<option> Torino </option>
+				<option> Asti </option>
+				<option> Alessandria </option>
+			</select>
+			<br/><br/>
+			<input type="reset" value="reset"> </input>
+			<input type="submit" value="invia"> </input>
+			
+		</form>
+		
+	</body>
+</html>
+
