@@ -1,0 +1,20 @@
+#wrapper{
+	/*text-align:center;*/
+	border:1px solid #555;
+	margin:20px auto;
+	padding:20px;
+	width:300px;
+	background-color:#8F8;
+}
+
+#wrapper label{
+	display:inline-block;
+	width:100px;
+	text-align:right;
+	margin-right:10px;
+}
+
+#wrapper input{
+	display:inline-block;
+	width:120px;
+}
