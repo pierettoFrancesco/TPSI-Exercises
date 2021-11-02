@@ -31,7 +31,7 @@ p.seconda {
 	font-size:24pt;
 	color:red;
 	font-weight:bold;
-	font-style:none;
+	font-style:normal;
 	background-color:#AAA;
 }
 p.terza{
@@ -51,7 +51,7 @@ div.quarta{
 	padding:20px 20px 10px 10px;
 	color:blue;
 	height:100px;
-	letter spacing:-1px;
+	letter-spacing:-1px;
 	word-spacing:-2px;
 	width:370px;
 	overflow:scroll;
@@ -70,4 +70,10 @@ div.pulsante{
 	text-decoration:none;	
 	color:#BBB;
 	
+}
+
+#wrapper{
+	width: 400px;
+	text-align: center;
+	margin: 20px auto;
 }
