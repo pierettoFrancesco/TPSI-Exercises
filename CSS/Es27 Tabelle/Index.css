@@ -1,0 +1,33 @@
+*{
+	/*CSS reset */
+	padding:0;
+	margin:0;
+}
+
+table{
+	border: 1px solid #CCC;
+	margin: 20px auto;
+	background-color: #ddd;
+
+}
+
+table thead th{
+	width: 130px;
+	padding: 10px;
+	
+}
+
+table thead tr{
+	background-color: #99f;
+}
+
+table tbody td:hover{
+	background-color: #00f;
+	color:#fff;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+table tbody tr:nth-of-type(odd){
+	background-color: #afa;
+}
