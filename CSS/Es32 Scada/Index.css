@@ -1,0 +1,97 @@
+*{
+	/*CSS reset */
+	padding:0;
+	margin:0;
+}
+
+h2{
+	font-weight: bold;
+	font-style: italic;
+	margin: 5px;
+	margin-bottom: 30px;
+
+}
+
+#wrapper{
+	width: 380px;
+	height: 390px;
+	margin: 30px auto;
+	padding:40px;
+	background-color: #eee;
+	border-radius: 20px;
+	
+}
+
+#comandi{
+	width: 180px;
+	
+}
+
+button{
+	width: 100px;
+	height: 40px;
+	background-color: #afa;
+	border-radius: 8px;
+	margin: 5px;
+	box-shadow: 3px 3px #888;
+	border: none;
+}
+
+#stati{
+	
+	width:200px;
+	background-color: #ffc;
+	position: relative;
+	top: -250px;
+	left: 180px;
+	text-align: left;
+	border-radius: 20px;
+	border:1px solid #777;
+	padding-top:10px;
+}
+
+.cerchi{
+	background-color: #777;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	box-shadow: 3px 3px #000;
+	display: inline-block;
+	float: right;
+}
+
+.lbl{
+	display: inline-block;
+	width: 170px;
+	padding: 10px;
+}
+
+.led{
+	width: 85px;
+	height: 20px;
+	background-color: #111;
+	line-height:16px ;
+	position:relative;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	position:relative;
+	left:20px;
+	top:-10px;
+
+}
+
+div.led div{
+	display: inline-block;
+	background-color: #777;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	
+	
+}
+
+#blocco{
+	padding:20px;
+}
+
