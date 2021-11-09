@@ -1,0 +1,54 @@
+*{
+	/*CSS reset */
+	padding:0;
+	margin:2%;
+}
+
+#wrapper{
+	width:50%;
+	margin-left: 25%;
+	background-color: #777;
+	border: 1px solid red;
+	font-size: 20pt;
+	font-weight: bold;
+	text-align:center ;
+}
+
+header, footer, nav{
+	padding: 37px;
+}
+
+header{
+	background-color: #ff0;
+}
+
+nav{
+	background-color: #0f0;
+}
+
+footer{
+	background-color: blue;
+}
+
+section{
+	border: 1px solid black;
+	background-color: magenta;
+}
+
+section p{
+	padding:25px;
+}
+
+article{
+	background-color: cyan;
+	width:62%;
+	height: 160px;
+	float:right;
+	margin-top: 0;
+}
+
+aside{
+	background-color: #0a0;
+	width: 30%;
+	height: 335px;
+}
