@@ -1,0 +1,44 @@
+*{
+	/*CSS reset */
+	padding:0;
+	margin:0;
+}
+
+h1{
+	text-align:center;
+	margin:15px;
+}
+
+#wrapper{
+	width:400px;
+	height:300px;
+	border:1px solid #000;
+	background-image: url(desert.jpg);
+	margin: 35px auto;
+	background-size:cover;
+	position:relative;
+	background-position:center;
+}
+
+#wrapper>p{
+	font-size:10pt;
+	width:380px;
+	padding:10px;
+	text-align:center;
+	color:rgba(255,255,255,0);
+	position:absolute;
+	bottom:0;
+	left:0;
+	background-color:rgba(0,0,0,0);
+}
+
+#wrapper:hover p{
+	color:rgba(255,255,255,0.5);
+	background-color:rgba(0,0,0,5);
+	
+}
+
+p:hover{
+	cursor:pointer;
+	text-decoration:underline;
+}

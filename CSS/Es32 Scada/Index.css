@@ -58,6 +58,7 @@ button{
 	box-shadow: 3px 3px #000;
 	display: inline-block;
 	float: right;
+	margin-right: 10px;
 }
 
 .lbl{
@@ -93,5 +94,11 @@ div.led div{
 
 #blocco{
 	padding:20px;
+}
+
+.cntCicli{
+	font-size: 20pt;
+	float:right;
+	margin-right: 20px;
 }
 
