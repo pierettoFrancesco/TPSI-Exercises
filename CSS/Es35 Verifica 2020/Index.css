@@ -1,0 +1,106 @@
+*{
+	/*CSS reset */
+	padding:0;
+	margin:0;
+}
+
+body{
+	background-color: #000;
+	font-family: verdana, sans-serif;
+	font-size: 10pt;
+}
+
+form{
+	width: 500px;
+	background-color: #333;
+	margin:50px auto;
+	padding: 25px;
+	border-radius: 20px;
+	position: relative;
+}
+
+h1{
+	font-size: 12pt;
+	color: #fca800;
+	margin-bottom:20px;
+}
+
+form label, form input.textBox{
+	height:30px;
+	margin: 10px auto;
+	text-align: left;
+} 
+
+label{
+	width:150px;
+	color: #aaa;
+	text-align: left;
+	float: left;
+}
+
+textarea, form input.textBox{
+	width:300px;
+	font-size: 9pt;
+	color: white;
+	background-color: #1c1c1c;
+	border: solid 1px #323232;
+	
+}
+
+.textBox{
+	padding-left: 35px;
+	background-image: url(img/matita.png);
+	background-position-x: 7px;
+	background-position-y: 5px;
+	background-repeat: no-repeat;
+	
+}
+
+textarea{
+	height: 200px;
+	width: 335px;
+}
+
+.button{
+	height: 30px;
+	width: 80px;
+	background-color: #fca800;
+	color: #111;
+	font-weight: bold;
+	text-align: center;
+	line-height:30px ;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	border-style: none;
+}
+
+.textBox:focus{
+	color:#fca800;
+}
+
+div{
+	background-image: url(img/vallauri.png);
+	background-size: cover;
+	color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	bottom: 150px;
+}
+
+p{
+	width: 125px;
+	height: 100px;
+	text-align: center;
+}
+
+div:hover p{
+	color: rgb(255,255,255,1);
+	font-weight: bold;
+	font-size: 15.74pt;
+	background-color:rgba(0,0,0,0.8) ;
+	text-align: left;
+	
+	
+
+}
