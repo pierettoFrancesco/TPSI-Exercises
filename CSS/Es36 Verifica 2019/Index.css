@@ -1,0 +1,127 @@
+*{
+	/*CSS reset */
+	padding:0;
+	margin:0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	font-family: verdana, sans-serif;
+	font-weight: 10pt;
+	background-image: url(img/bg.gif);
+	background-repeat: repeat-y;
+	background-position:center;
+	background-color:#eaeaea;
+}
+
+#wrapper{
+	width: 740px;
+	padding: 0 10px;
+	margin: 10px auto;
+	background-color: #dff;
+	height: 100%;
+}
+
+#header{
+	height: 190px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	background-image: url(img/medusa.jpg);
+	background-size: cover;
+	background-position:center ;
+	text-align: center;
+}
+
+h1,h3{
+	color: red;
+}
+
+h1{
+	font-size:30pt;
+	padding: 15pt;
+}
+
+h3{
+	font-size:16pt;
+	padding: 8pt;
+}
+
+#mainBox{
+	width: 540px;
+	height: 250px;
+	padding: 12px;
+	overflow: scroll;
+}
+
+#mainBox > h3{
+	padding: 15px 20px;
+	color: black;
+
+}
+
+#mainBox > div{
+	background-image: url(img/img.jpg);
+	float: left;
+	width: 110px;
+	height: 88px;
+	margin: 12px 12px 12px 5px;
+	color: rgba(0,0,0,0);
+}
+
+#mainBox> div:hover  p{
+	color:#eee;
+	background-color: rgba(0,0,0,0.5);
+	text-align: left;
+	font-size: 8pt;
+}
+
+#aside{
+	float: right;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid black;
+	border-radius: 10px;	
+}
+
+li{
+	width: 140px;
+	height: 50px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	margin: 2px;
+	border: 1px solid grey;
+	border-left: 5px solid grey;
+	background-color:#afa;
+	
+	border-radius: 5px;
+	list-style: none;
+	
+}
+
+a{
+	text-decoration: none;
+	color: #666;
+}
+
+#aside>li:hover, a:hover{
+	text-decoration: underline;
+	background-color: #666;
+	color: #afa;
+}
+
+#footer{
+	margin-top: 20px;
+	padding: 7px;
+	border: 1px solid black;
+	border-radius: 6px;
+	
+}
+
+	
+	
