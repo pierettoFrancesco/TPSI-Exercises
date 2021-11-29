@@ -1,0 +1,23 @@
+<!DOCTYPE html> 		<!--documento html5-->
+<html lang="it">
+	<head>
+			<meta charset="UTF-8" />
+			<title>  Es_38  </title>
+			<link rel="stylesheet" href="index.css"/>
+	</head>
+	<body>
+		<h1 align="center"> nuovi input tag HTML 5 </h1>
+		<form id="wrapper" action="pagina2.html">
+		<!-- NAME SERVE PER INVIARE IL CONTENUTO DEL CONTROLLO AL SERVER, ID INVECE CE LO ASSOCIA AD UNA LABEL-->
+			<label for="txtUser"> Nome: </label>
+			<input type="text" name="txtUser" id="txtUser" pattern="[a-z]{1}[a-z_]{2,19}"/>
+			<br/><br/>
+			<label for="txteta"> Età: </label>
+			<input type="number" name="txtEta" id="txtEta" min="15" max="90" step="5"/>
+			<br/><br/>
+			
+			<input type="submit" value="invia"/>
+			<br/><br/>
+		</form>
+	</body>
+</html>	
