@@ -1,0 +1,19 @@
+*{
+	/*CSS reset */
+	padding:0;
+	margin:0;
+}
+
+html,body{
+	height: 100%;
+	width: 100%;
+}
+#wrapper{
+	background-color: #afeeee;
+	height: 100%;
+	width: 100%;
+
+}
+h1{
+	color: rgb(32,66,83);
+}
