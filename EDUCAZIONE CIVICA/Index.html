@@ -8,7 +8,124 @@
 	<body>
 		<div id="wrapper">
 				<h1 align="center"> Questionario Social Network </h1>
-
+					<form id="form" action="pagina2.html">
+						<fieldset class="InfPers">
+							<legend >Informazioni personali: </legend>
+							<span> Genere: </span>
+							&nbsp;
+							<label for="optUomo"> Uomo </lable>
+							<input type="radio" id="optUomo" name="optGen" required autocomplete="off" />
+							&nbsp;&nbsp;&nbsp;
+							<label for="optDonna"> Donna </lable>
+							<input type="radio" id="optDonna" name="optGen" required autocomplete="off" />
+							</br></br>
+							<label for="txtNome"> Nome: </label>
+							<input type="text" name="txtNome" id="txtNome" pattern="[A-Z]{1}[a-zA-z_]{7,11}" required minlength="8"/>
+							<br/><br/>
+							<label for="txtCognome"> Cognome: </label>
+							<input type="text" name="txtCognome" id="txtCognome" pattern="[A-Z]{1}[a-zA-z_]{7,11}" required minlength="8"/>
+							<br/><br/>
+							<label for="txtEta"> Età: </label>
+							<input type="number" name="txtEta" id="txtEta" required min="8" max="100" step="1"/>
+							<br/><br/>
+							<label for="txtProv"> Provenienza: </label>
+							<input type="text" name="txtProv" id="txtProv" list="listaProv" id="txtProv" required/>
+							<datalist id="listaProv">
+								<option> Abruzzo </option>
+								<option> Basilicata </option>
+								<option> Calabria </option>
+								<option> Campania </option>
+								<option> Emilia Romagna </option>
+								<option> Friuli-Venezia Giulia </option>
+								<option> Lazio </option>
+								<option> Liguria </option>
+								<option> Lombardia </option>
+								<option> Marche </option>
+								<option> Molise </option>
+								<option> Piemonte </option>
+								<option> Puglia </option>
+								<option> Sardegna </option>
+								<option> Sicilia </option>
+								<option> Toscana </option>
+								<option> Trentino-Alto Adige </option>
+								<option> Umbria </option>
+								<option> Valle d'Aosta </option>
+								<option> Veneto </option>
+							</datalist>	
+						</fieldset>
+						<br/><br/>
+						<fieldset class="Social">
+							<legend> Social Network: </legend>
+							<label for="txtOre"> Quante ore passi online di media? </label>
+							<input type="number" name="txtOre" id="txtOre" required min="0" max="24" step="1"/>
+							<br/><hr>
+							<p> Qual'è il social network che utilizzi di più?: </p>
+							</br>
+							<label for="optInsta"> Instangram </lable>
+							<input type="radio" id="optInsta" name="optSocial" required autocomplete="off" />
+							&nbsp;&nbsp;&nbsp;
+							<label for="optTwitter"> Twitter </lable>
+							<input type="radio" id="optTwitter" name="optSocial" required autocomplete="off" />
+							&nbsp;&nbsp;&nbsp;
+							<label for="optFaceBook"> FaceBook </lable>
+							<input type="radio" id="optFaceBook" name="optSocial" required autocomplete="off" />
+							&nbsp;&nbsp;&nbsp;
+							<label for="optSnap"> SnapChat </lable>
+							<input type="radio" id="optSnap" name="optSocial" required autocomplete="off" />
+							&nbsp;&nbsp;&nbsp;
+							<label for="optPinterest"> Altro </lable>
+							<input type="radio" id="optPinterest" name="optSocial" required autocomplete="off" />
+							<br/><br/>
+							<label for="txtOre">Quanto tempo utilizzi il social scelto rispetto al tempo che passi su internet? </label>
+							<br/><br/>
+							<span> 1 </span>
+							<input type="range" name="txtOre" min="1" max="10" step="1"/>
+							<span> 10 </span>
+							<br/><hr>
+							<p>Quale dispositivi utilizzi maggiormente?</p>
+							<br/>
+							<label for="chkComputer"> Computer </lable>
+							<input type="checkbox" id="chkComputer"  />
+							&nbsp;&nbsp;&nbsp;
+							<label for="chkSmartPhone"> Smartphone</lable>
+							<input type="checkbox" id="chkSmartphone"  />
+							&nbsp;&nbsp;&nbsp;
+							<label for="chkTablet"> Tablet </lable>
+							<input type="checkbox" id="chkTablet" />
+						</fieldset>
+						<br/><br/>
+						<fieldset class="Rischi">
+							<legend> Rischi di internet: </legend>
+							<p>Hai mai riscontrato dei problemi con il web? </p>
+							</br>
+							<label for="optSi"> Sì </lable>
+							<input type="radio" id="optSi" name="optProb" required autocomplete="off" />
+							&nbsp;&nbsp;&nbsp;
+							<label for="optNo"> No </lable>
+							<input type="radio" id="optNo" name="optProb" required autocomplete="off" />
+							<br/><br/>
+							<p>Se sì quali?? </p>
+							<br/>
+							<label for="chkCyber"> Cyberbullismo </lable>
+							<input type="checkbox" id="chkCyber" />
+							&nbsp;&nbsp;&nbsp;
+							<label for="chkFurto"> Furto d'identità</lable>
+							<input type="checkbox" id="chkFurto" />
+							&nbsp;&nbsp;&nbsp;
+							<label for="chkPedo"> Pedopornografia </lable>
+							<input type="checkbox" id="chkPedo"/>
+							&nbsp;&nbsp;&nbsp;
+							<label for="chkPrivacy"> Violazione privacy </lable>
+							<input type="checkbox" id="chkPrivacy"/>
+							&nbsp;&nbsp;&nbsp;
+							<label for="chkPhishing"> Phishing </lable>
+							<input type="checkbox" id="chkPhishing"/>
+							&nbsp;&nbsp;&nbsp;
+							<label for="chkAltr"> Altro </lable>
+							<input type="checkbox" id="chkAltr"/>
+						</fieldset>
+						<div> <input type="submit" value="Clicca qui per inviare il form"> </input> </div>
+					</form>
 		</div>
 		
 		

@@ -5,15 +5,72 @@
 }
 
 html,body{
-	height: 100%;
-	width: 100%;
+	height: 1100px;
+	background-color: #afeeee;
 }
+
 #wrapper{
 	background-color: #afeeee;
-	height: 100%;
-	width: 100%;
-
+	height: 1100px;
+	margin: 20px auto;
 }
 h1{
 	color: rgb(32,66,83);
 }
+
+#form{
+	background-color: bisque;
+	height: 1000px;
+	width:50%;
+	margin: 5px auto;
+	padding-top: 20px;
+	border-radius: 20px;
+}
+
+legend{
+	color: #336633;
+	margin-top: 30px ;
+}
+
+.InfPers{
+	width: 80%;
+	margin: 30px auto;
+	margin-bottom: 10px;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.Social{
+	width: 80%;
+	margin: 30px auto;
+	margin-top: 0px;
+	padding: 15px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+hr{
+	margin: 15px;
+}
+
+.Rischi{
+	width: 80%;
+	margin: 30px auto;
+	margin-top: 0px;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+div{
+	margin: 20px auto;
+	padding: 15px;
+	margin-left: 265px;
+	border-radius: 20px;
+}
+
+
+
+
+
+
+
