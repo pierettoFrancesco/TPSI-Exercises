@@ -1,13 +1,13 @@
-*{
+* {
     padding:0px;
     margin:0;
 }
 
-html, body, wrapper{
+html, body, #wrapper {
 	height:100%;
 }
 
-body{
+body {
     font-family:verdana,arial,sans-serif;
     font-size:9pt;
     background-image: url(img/bg.gif);
@@ -15,15 +15,16 @@ body{
     background-position:center;
     background-color: rgb(234,234,234);
 }
-#wrapper{
+#wrapper {
     max-width: 772px;
     padding:1px 4px;
     margin:0 auto;
 }
 
 /**************************************************************/
-#topFrame{
-	background-size:contain;
+
+#topFrame {
+	background-size: contain;
     height:275px;
     background-image: url(img/front.jpg);
     background-repeat: no-repeat;
@@ -32,15 +33,15 @@ body{
     color: #505050;
 }
 
-#topFrame h1{
+#topFrame h1 {
     font-weight:normal;
     letter-spacing:-2px;
-    font-size:2.5em;/*em vuol dire rispetto al genitore==2,5*9*/
+    font-size:2.5em;    /* em vuol dire rispetto al genitore = 2,5 * 9 */
     margin:0 0 5px 20px;
     padding-top:15px;
 }
 
-#topFrame p{
+#topFrame p {
     font-size: 1.1em;
     letter-spacing:-1px;
     font-weight:bold;
@@ -48,18 +49,23 @@ body{
 }
 
 /**************************************************************/
-#leftFrame{
+
+#leftFrame {
     max-width:143px;
     float:left;
 	padding-left:7px;
 }
 
-.menu1{
+#leftFrame img:nth-of-type(1) {
+    display: none;
+}
+
+.menu1 {
     width:150px;
     margin-bottom:20px;
     list-style:none;
 }
-.menu1 li{
+.menu1 li {
     width:135px;
     height:20px;
     padding: 6px 0px 0px 10px;
@@ -71,27 +77,26 @@ body{
     border-left:4px solid #CCCCCC;
 }
 
-.menu2{
+.menu2 {
     width:135px;
     margin:5px 0px 0px 15px;
     list-style:none;
 }
 
-.menu2 li{
+.menu2 li {
     padding:4px 0px 0px 8px;
     width:122px;
     height:16px;
     font-size:8pt;
 }
 
-
-li:hover{
+li:hover {
     background-color:rgb(216,216,216);
     border-color:#b0b0b0;
     border-left-color:#505050;
 }
 
-.latestNews{
+.latestNews {
     width:135px;
     height:130px;
     color:#505050;
@@ -102,120 +107,192 @@ li:hover{
     font-size:8pt;
 }
 
-.latestNews h1{
+.latestNews h1 {
 	font-weight:normal;
     font-size:13.5pt;
     margin:5px 5px 10px 0;
 }
 
-.latestNews a{
+.latestNews a {
 	float:right;
     font-weight:bold;
 	margin-top:10px;
 	color:black;
 }
 
-.latestNews a{
+.latestNews a {
 	float:right;
     font-weight:bold;
 	margin-top:10px;
 	color:black;
 }
 
-.latestNews p:nth-of-type(1){
+.latestNews p:nth-of-type(1) {
     font-weight:bold;
 }
 
 
 /**************************************************************/
-#mainFrame{
+
+#mainFrame {
     margin: 10px 10px 10px 160px;
     line-height:19px;
 	max-width:476px;
 }
-#mainFrame h1{
+
+#mainFrame h1 {
     margin:0 0 10px 10px;
 	font-weight:normal;
-	font-size:1.66em; /* 15 pt */
+	font-size:1.66em;   /* 15 pt */
 }
-#mainFrame div{
+
+#mainFrame div {
 	margin:10px;
 }
-#mainFrame div img{
+
+#mainFrame div img {
     float:left;
     margin:10px;
 }
 
 /**************************************************************/
-#rightFrame{
+
+#rightFrame {
     max-width:130px;
 	padding-right:6px;
     float:right;
 	font-size:8pt;
 }
-#rightFrame p{
+
+#rightFrame p {
     margin-bottom:16px;
     line-height:14px;
 }
-#rightFrame ul{
+
+#rightFrame ul {
     list-style:none;
     margin-bottom:16px;
     line-height:14px;
 }
-#rightFrame li{
+
+#rightFrame li {
     margin-bottom:6px;
 }
-#rightFrame a{
+
+#rightFrame a {
     font-weight:bold;
 	color:#444;
 	text-decoration:none;
 }
-#rightFrame h2{
+
+#rightFrame h2 {
     font-size:13pt;
     Font-weight:normal;
     margin-bottom:6px;
 	letter-spacing:-1px;
 }
-#rightFrame input{
-    max-width:120px;
+
+#rightFrame input {
+    width:120px;
 	margin-bottom:10px;
 }
 
 /**************************************************************/
-#bottomFrame{
+
+#bottomFrame {
     clear:both;
     padding:8px;
     color:#808080;
     text-align:center;
 }
 
-#bottomFrame hr{
+#bottomFrame hr {
     height:2px;
     color:#dadada;
 	margin-bottom:5px;
 }
 
-/****************************************************************/
-@media screen and (max-device-width:700px){
-	#leftFrame{
-		display:none;
+/**************************************************************/
+
+/* MEDIA QUERY */
+
+@media screen and (max-device-width:700px) { 
+
+	#leftFrame {
+		display: block;
 	}
-	
-	#rightFrame{
-		display:none;
+
+	#rightFrame {
+		display: none;
 	}
-	
-	#mainFrame{
-		margin-left:10px;
-		max-width:none;
-		width:auto;
-		background-color:#FFE;
+
+	#mainFrame {
+		margin-left: 10px;
+		max-width: none;
+		width: 98%;
 	}
-	
-	#topFrame{
-		height:0px;
-		padding-bottom:35%;
+
+	#topFrame {
+        /* HEIGHT non accetta valori in percentuale % */
+        /* Le dimensioni di un elemento sono date da WIDTH + PADDING + BORDO e HEIGHT + PADDING + BORDO */
+		height: 0px;
+		padding-bottom: 35%;
 	}
-	
+
+	#leftFrame {
+		display: block;
+        float: none;
+        max-width: none;
+        width: 98%;
+	}
+
+    #leftFrame .menu2, #leftFrame .latestNews {
+        display: none;
+    }
+
+    #leftFrame .menu1 {
+        width: 98%;
+    }
+
+    #leftFrame .menu1 li {
+        display: inline-block;
+    }
+
 }
+
+@media screen and (max-device-width:490px) {
+
+    body {
+        font-size: 8pt;
+    }
+
+    #topFrame {
+        font-size: 6pt;
+    }
+
+    #leftFrame img:nth-of-type(1) {
+        display: block;
+        float: right;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+
+    #leftFrame .menu1 li {
+        display: block;
+        width: 96%;
+    }
+
+    #leftFrame {
+        overflow: auto;
+    }
+
+    #leftFrame .menu1 {
+        clear: both;
+        display: none;
+    }
+
+}
+
+
+
 
