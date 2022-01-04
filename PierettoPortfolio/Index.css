@@ -1,0 +1,50 @@
+*{
+	/*CSS reset */
+	padding:0;
+	margin:0;
+}
+
+html{
+	height: 100%;
+	background-color: #fefaa1;
+}
+
+h1{
+	color: #d40000;
+	font-family: sans-serif;
+	font-size: 15pt;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.button{
+	text-align: center;
+	color: #d40000;
+	font-size: 20pt;
+	font-family: sans-serif;
+	padding-top: 15px;
+}
+
+a{
+	color: #d40000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.img{
+	background-image: url(computer.png);
+	background-position: center;
+	width: 1000px;
+	height: 722px;
+	background-size: cover;
+	padding-top: 10px;
+	margin: 10px auto;
+}
+
+.txt{
+	font-family:cursive;
+	font-size:80pt;
+	color: #d40000;
+	margin-top: 320px;
+}
