@@ -48,7 +48,7 @@ a{
 }
 
 .img{
-	background-image: url(citta.jpg);
+	background-image: url(img/citta.jpg);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -82,7 +82,7 @@ a{
 }
 
 #famiglia > div:first-of-type{
-	background-image: url(Famiglia.jpeg);
+	background-image: url(img/Famiglia.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -117,7 +117,7 @@ h3{
 }
 
 #scuola > div:nth-of-type(2){
-	background-image: url(Vallauri.jpg);
+	background-image: url(img/Vallauri.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -146,7 +146,7 @@ h3{
 }
 
 #sport > div:first-of-type{
-	background-image: url(Sport.jpg);
+	background-image: url(img/Sport.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -175,7 +175,7 @@ h3{
 }
 
 #musica > div:nth-of-type(2){
-	background-image: url(musica.jpg);
+	background-image: url(img/musica.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -204,7 +204,7 @@ h3{
 }
 
 #viaggi > div:first-of-type{
-	background-image: url(viaggi.jpg);
+	background-image: url(img/viaggi.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
