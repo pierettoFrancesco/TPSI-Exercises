@@ -79,6 +79,7 @@ a{
 	grid-column-gap:6px;
 	grid-row-gap:5px;
 	box-shadow: 6px 3px 4px #ff9900;
+	margin-top: 22px;
 }
 
 #famiglia > div:first-of-type{
@@ -92,6 +93,7 @@ a{
 	overflow:auto;
 	padding: 5px;
 	text-align: left;
+	font-size: 15pt;
 }
 
 h3{
@@ -128,6 +130,7 @@ h3{
 	overflow:auto;
 	padding: 5px;
 	text-align: right;
+	font-size: 15pt;
 }
 
 #sport{
@@ -156,6 +159,7 @@ h3{
 	overflow:auto;
 	padding: 5px;
 	text-align: left;
+	font-size: 15pt;
 }
 
 #musica{
@@ -186,6 +190,7 @@ h3{
 	overflow:auto;
 	padding: 5px;
 	text-align: right;
+	font-size: 15pt;
 }
 
 #viaggi{
@@ -214,6 +219,7 @@ h3{
 	overflow:auto;
 	padding: 5px;
 	text-align: left;
+	font-size: 15pt;
 }
 
 .home{
@@ -222,4 +228,9 @@ h3{
 	font-family: inherit;
 	font-size: 20pt;
 	padding-bottom: 15px;
+}
+
+.link{
+	text-decoration: underline;
+	color:#3366bb;
 }
