@@ -29,6 +29,13 @@ body{
 	font-weight: bold;
 }
 
+@media screen and (max-device-width:400px) {
+	.contatti{
+		font-size:8pt;
+	}
+
+}
+
 hr{
 	border-color: #ffbf00;
 	background-color: #ffbf00;
