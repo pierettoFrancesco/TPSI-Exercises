@@ -1,0 +1,144 @@
+*{
+	/*CSS reset */
+	padding:0;
+	margin:0;
+}
+
+body{
+	font-family:Arial,Helvetica;
+	font-size: 14pt;
+	line-height: 160%;
+	background-image: url(img/sky.jpg);
+	background-position:center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position:relative;
+}
+
+#wrapper{
+	width: 980px;
+	margin: 10px auto;
+}
+
+header{
+	margin: 15px;
+}
+
+header h1{
+	font-size: 30pt;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: blue;
+	text-shadow: 3px 3px 4px #000;
+}
+
+header nav{
+	padding: 20px;
+	background-color: rgb(16,16,32);
+	opacity: 50%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 4px #000;
+	overflow:auto;
+}
+
+header nav a, header nav h3{
+	color: #aaf;
+}
+
+header nav ul{
+	border: 2px solid red ;
+	width: 440px;
+	float: right;
+	border-radius: 10px;
+	display: block;
+}
+
+header nav ul li{
+	display:inline-block;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 3px 3px 3px #000;
+	background-image: radial-gradient(circle at 50% 25%,#55c 0%, #116 90%);
+	transition: background-color 0.5s, transform 0.5s;
+	list-style-type: none;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	text-align: center;
+	font-size:12pt;
+}
+
+header nav ul li:hover {
+	background-color: #04a;
+	background-image: none;
+	transform: scale(1.10);
+}
+
+header nav ul li:hover a {
+	color:#ffff00;
+}
+
+section{
+	width:600px;
+	margin:15px;
+	padding:20px;
+	background-color: #fff;
+	opacity: 50%;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px #000;
+}
+
+
+
+section article p{
+	font-size: 12pt;
+}
+
+aside{
+	width: 200px;
+	margin-left:30px;
+	position:absolute;
+	bottom:195px;
+	left:1000px;
+}
+
+aside div{
+	height: 200px;
+	overflow:auto;
+	font-size: 11pt;
+}
+
+aside h2{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+aside img{
+	width:160px;
+	transition: transform 2s;
+}
+
+aside img:hover{
+	transform:rotate(10deg);
+}
+
+aside h1{
+	margin-bottom:15px;
+}
+
+section h1{
+	margin-bottom:15px;
+	margin-top:15px;
+}
+
