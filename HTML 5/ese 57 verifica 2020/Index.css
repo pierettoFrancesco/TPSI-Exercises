@@ -1,0 +1,144 @@
+*{
+	/*CSS reset */
+	padding:0;
+	margin:0;
+}
+
+body{
+	font-family: Verdana, Helvetica;
+	font-size:11pt;
+	background-image: url(img/sfondo.jpg);
+	background-attachment: fixed;
+}
+
+#wrapper{
+	width:1024px;
+	margin:5px auto;
+	border: solid 1px blue;
+}
+
+header h1{
+	color:blue;
+	text-align:center;
+	font-size:30pt;
+	padding-top:30px;
+	padding-bottom:30px;
+	text-shadow: 3px 3px 4px #009;
+}
+
+header nav{
+	width:960px;
+	margin:2px auto;
+	padding:15px;
+	background-color: rgba(40,40,40,0.5);
+	border-radius:12px;
+	box-shadow: 3px 3px 4px black;
+	overflow:auto;
+}
+
+header nav h3{
+	color:#0dd;
+}
+
+header nav ul{
+	border:solid 1px blue;
+	display:block;
+	float:right;
+}
+
+header nav ul li{
+	display:inline-block;
+	width:80px;
+	height: 35px;
+	text-align:center;
+	line-height:35px;
+	margin:10px;
+	padding:10px;
+	background-image:radial-gradient(circle at 50% 25%,#333 0%, #eee 90%);
+	border: 1px solid black;
+	border-radius:5px;
+	box-shadow: 2px 2px 3px black;
+	transition: transform 0.5s, color 0.5s, text-decoraton 0.5s;
+}
+
+header nav ul li a{
+	font-weight: bold;
+	color:#0dd;
+	text-decoration:none;
+	
+}
+
+header nav ul li:hover{
+	background-image:radial-gradient(circle at 50% 25%,blue 0%, #ddf 90%);
+	transform:scale(1.06);
+}
+
+header nav ul li:hover a{
+	color:yellow;
+	text-decoration:underline;
+}
+
+#mainSection{
+	width: 615px;
+	margin:15px;
+	padding: 10px;
+	background-color: rgba(256,256,256,0.5);
+	border-radius: 12px;
+	box-shadow: 3px 3px 4px #333;
+}
+
+#mainSection article h2, #mainSection article p{
+	margin: 10px;
+}
+
+#mainSection img{
+	width: 192px;
+	margin:4px;
+	opacity:40%;
+	border-radius:12px;
+	box-shadow: 2px 2px 2px #888;
+	transition: opacity 0.5s, transform 0.5s;
+}
+
+#mainSection img:hover{
+	opacity:100%;
+	transform:rotate(5deg);
+}
+
+aside{
+	float:right;
+	width:310px;
+	margin: 12px;
+	padding: 10px;
+	background-color: rgba(256,256,256,0.5);
+	border-radius:12px;
+	box-shadow: 3px 3px 4px #333;
+}
+
+aside section #progressBar{
+	height:20px;
+	margin:15px;
+	background-color: #0d0;
+	animation: animazione 3s linear infinite; 
+	overflow:hidden;
+}
+
+@keyframes animazione{
+	0% {width: 1px; }
+	100%{width: 240px; }
+}
+
+button{
+	font-weight:bold;
+	padding:5px 15px;
+	margin:10px;
+	background-color: #bbb;
+	border-radius: 8px;
+	box-shadow: 3px 3px 2px #0dd,
+				6px 6px 2px #000;     
+	float:right;
+}
+
+button:hover{
+	cursor:pointer;
+}

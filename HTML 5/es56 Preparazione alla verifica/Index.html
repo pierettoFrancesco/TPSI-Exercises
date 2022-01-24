@@ -20,15 +20,7 @@
 			 </nav>
 		 </header>
 		
-		<section>  
-			 <article>
-					 <h2> Introduzione al Sito </h2>
-					 <p> Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
-					 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.	</p>
-			 </article>
-		</section>
-		
-		<aside> 
+		 <aside> 
 			<h1>News</h1>
 			<div>
 			  Lorem ipsum dolor sit amet</br>
@@ -51,25 +43,35 @@
 			<h2> L'intelligenza dei Koala </h2>
 			<img src="img/koala.jpg">
 		 </aside>    
+
+		<section>  
+			 <article>
+					 <h2> Introduzione al Sito </h2>
+					 <p> Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
+					 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.	</p>
+			 </article>
+		</section>
+		
+		
 		 
 			<section>  
 				  <h1> Inserisci i tuoi dati </h1>
 				  <fieldset>
 					 <legend> Informazioni Anagrafiche </legend>
 					 <label for="txtNome">Nome:  
-						 <input type="text" id="txtNome">  
+						 <input type="text" id="txtNome" required>  
 					 </label> <br> <br>
 					 <label for="txtCognome">Cognome:  
-						 <input type="text" id="txtCognome">  
+						 <input type="text" id="txtCognome" required>  
 					 </label> <br> <br>
 					 <label for="txtEta">Età:  
-						 <input type="text" id="txtEta">  
+						 <input type="number" id="txtEta" required>  
 					 </label> <br> <br>
 					 <label for="txtPeso">Peso:  
-						 <input type="text" id="txtPeso">  
+						 <input type="number" id="txtPeso" min="60" max="80" required>  
 					 </label> <br> <br>
 					 <label for="cmbOccupazione">Occupazione:  
-						 <input type="text" id="cmbOccupazione">
+						 <input type="text" id="cmbOccupazione" required>
 					 </label> <br> <br>
 				  </fieldset>
 				  

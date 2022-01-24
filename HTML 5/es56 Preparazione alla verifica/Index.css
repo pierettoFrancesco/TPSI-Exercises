@@ -13,7 +13,7 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	position:relative;
+	/*position:relative;*/
 }
 
 #wrapper{
@@ -36,8 +36,7 @@ header h1{
 
 header nav{
 	padding: 20px;
-	background-color: rgb(16,16,32);
-	opacity: 50%;
+	background-color: rgba(16,16,32,0.5);
 	border-radius: 10px;
 	box-shadow: 3px 3px 4px #000;
 	overflow:auto;
@@ -91,8 +90,7 @@ section{
 	width:600px;
 	margin:15px;
 	padding:20px;
-	background-color: #fff;
-	opacity: 50%;
+	background-color: rgba(256,256,256,0.5);
 	border-radius: 10px;
 	box-shadow: 2px 2px 3px #000;
 }
@@ -106,9 +104,10 @@ section article p{
 aside{
 	width: 200px;
 	margin-left:30px;
-	position:absolute;
+	/*position:absolute;
 	bottom:195px;
-	left:1000px;
+	left:850px;*/
+	float:right;
 }
 
 aside div{
