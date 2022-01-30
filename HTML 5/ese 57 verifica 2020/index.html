@@ -37,12 +37,23 @@
 				<label for="txtData">Data di nascita:  
 					<input type="date" id="txtData" required>  
 				</label> <br> <br>
-				<label for="txtPeso">Classe di appartenenza:  
-					<input type="number" id="txtPeso" min="60" max="80" required>  
+				<label for="nbrClasse">Classe di appartenenza:  
+					<input type="number" id="nbrClasse" min="1" max="5" required>  
 				</label> <br> <br>
-				<label for="cmbOccupazione">Settore:  
-					<input type="text" id="cmbOccupazione" required>
+				<label for="txtSett">Settore:  
+					<input type="text" id="txtSett" required list="Sett_list">
+					<datalist id="Sett_list">
+						<option>Informatica</option>
+						<option>Elettrotecnica</option>
+						<option>Meccanica</option>
+					</datalist>
 				</label> <br> <br>
+				<div>km da Fossano: </div>
+				<span class="km"> 1 </span> <span> 50 </span> <br>
+							<input type="range" name="txtOre" min="1" max="50" step="5"/>
+				
+
+				</label>
 				<button > Invia </button>
 			</fieldset> 
 			

@@ -142,3 +142,36 @@ button{
 button:hover{
 	cursor:pointer;
 }
+
+.km{
+	margin-right:90px;
+}
+
+#socialNetworks li{
+	height:55px;
+	width:60px;
+	list-style-type: none;
+	float:left;
+}
+
+#nbrClasse{
+	width:100px;
+}
+#socialNetworks li a{
+	background-image: url(img/socialNetworks.png);
+}
+
+.twitter a{
+	background-position-x:0px ;
+	background-position-y: 0px;
+}
+
+#socialNetWorks .facebook a{
+	background-position-x:-60px ;
+	background-position-y: 0px;
+}
+
+#socialNetWorks .linkedin a{
+	background-position-x:-120px ;
+	background-position-y: 0px;
+}

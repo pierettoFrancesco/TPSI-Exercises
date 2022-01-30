@@ -1,0 +1,123 @@
+*{
+	/*CSS reset */
+	padding:0;
+	margin:0;
+}
+
+body{
+	font-family:verdana,Arial,sans-serif;
+	background-image: url(img/sfondo.jpg);
+	background-position: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#wrapper{
+	margin:5px auto;
+	width:1000px;
+}
+
+header,nav,#wrapper section,aside,footer{
+	border-radius:10px;
+}
+
+nav,#wrapper section,aside{
+	height:650px;
+	background-image: linear-gradient(to bottom,rgb(200,256,220) 0%,rgb(100,178,110) 100%);
+}
+
+nav h1,#wrapper section h1,aside h1{
+	padding:20px;
+}
+
+header{
+	background-color:rgb(200,256,220);
+	height:140px;
+	line-height:140px;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+header h1{
+	font-size:38pt;
+	display:inline-block;
+}
+
+header div{
+	margin-right:20px;
+	width:161px;
+	height:69px;
+	background-image: url(img/unicredit1.png);
+	float:right;
+	border:8px solid white;
+	margin-top:25px;
+}
+
+ header div:hover{
+	background-image: url(img/unicredit2.png);
+	cursor:pointer;
+ }
+ /*header div{
+	border:8px solid white;
+	animation: animazione1 2.5s linear 2.5s infinite;
+ }
+
+@keyframes animazione1{
+	0% {transform: color(white);}
+	50%{transform: color(red);}
+	100%{transform: color(white);}
+	
+}*/
+
+footer{
+	background-color:rgb(100,178,110);
+}
+
+nav{
+	width:240px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:10px;
+	float:left;
+	text-align: left;
+}
+
+nav ul{
+	width:210px;
+	padding: 10px;
+	list-style-type: none;
+}
+
+nav ul li{
+	width:190px;
+	padding-top:25px;
+	height:45px;
+	padding-left:10px;
+	background-color:#444;
+	border-bottom: 1px solid #666;
+	border-left:3px solid #444;
+}
+
+nav ul li a{
+	font-size:12pt;
+	font-weight:bold;
+	color:#aaa;
+	text-decoration: none;
+}
+
+
+
+aside{
+	float:right;
+	width:180px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:10px;
+}
+
+#wrapper section{
+	display:inline-block;
+	margin:10px;
+	width:540px;
+}
