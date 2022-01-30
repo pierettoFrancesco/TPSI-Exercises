@@ -52,23 +52,28 @@ header div{
 	float:right;
 	border:8px solid white;
 	margin-top:25px;
+	animation:animazione1 2.5s linear infinite;
 }
 
  header div:hover{
 	background-image: url(img/unicredit2.png);
 	cursor:pointer;
  }
- /*header div{
-	border:8px solid white;
-	animation: animazione1 2.5s linear 2.5s infinite;
- }
-
+ 
 @keyframes animazione1{
-	0% {transform: color(white);}
-	50%{transform: color(red);}
-	100%{transform: color(white);}
-	
-}*/
+	0% {border-right-color:white;
+		border-left-color: white;
+		border-top-color:red;
+		border-bottom-color: red;}
+	50%{border-right-color:red;
+		border-left-color: red;
+		border-top-color:white;
+		border-bottom-color: white;}
+	100%{border-right-color:white;
+		border-left-color: white;
+		border-top-color:red;
+		border-bottom-color: red;}
+}
 
 footer{
 	background-color:rgb(100,178,110);
