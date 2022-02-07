@@ -54,7 +54,7 @@ header nav ul li{
 	line-height:35px;
 	margin:10px;
 	padding:10px;
-	background-image:radial-gradient(circle at 50% 25%,#333 0%, #eee 90%);
+	background-image:radial-gradient(circle,#333 0%, #eee 90%);
 	border: 1px solid black;
 	border-radius:5px;
 	box-shadow: 2px 2px 3px black;
@@ -69,7 +69,7 @@ header nav ul li a{
 }
 
 header nav ul li:hover{
-	background-image:radial-gradient(circle at 50% 25%,blue 0%, #ddf 90%);
+	background-image:radial-gradient(circle,blue 0%, #ddf 90%);
 	transform:scale(1.06);
 }
 
@@ -157,21 +157,23 @@ button:hover{
 #nbrClasse{
 	width:100px;
 }
-#socialNetworks li a{
+#socialNetworks li a div{
+	width: 60px;
+	height: 47px;
+	margin-top: 10px;a
 	background-image: url(img/socialNetworks.png);
 }
 
-.twitter a{
+.twitter a div{
 	background-position-x:0px ;
 	background-position-y: 0px;
 }
 
-#socialNetWorks .facebook a{
-	background-position-x:-60px ;
-	background-position-y: 0px;
+#socialNetWorks .facebook a div{
+	background-position:(60,0);
 }
 
-#socialNetWorks .linkedin a{
+#socialNetWorks .linkedin a div{
 	background-position-x:-120px ;
 	background-position-y: 0px;
 }
