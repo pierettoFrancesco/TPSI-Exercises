@@ -24,11 +24,22 @@ function init(){
 
 function controlla(){
     let cont=0;
+    let temp=[];
     
+    
+    for(let i=0;i<3;i++)
+        temp[i]=vet[i];
+    //temp=vet; è sbagliato per così si assegna il puntatore
+    //da qui temp e vet diventano la stessa cosa
+
     for(let i=0;i<3;i++){
-    
-        if(vet.includes(parseInt(_txtN[i].value)))
+        let val=parseInt(_txtN[i].value);
+
+        if(temp.includes(val)){
             cont++;
+            let pos=temp.indexOf(val);
+            temp.splice(pos,1);
+        }
         _chkN[i].checked=false;  
     }
     for(let i=0;i<cont;i++)
@@ -45,7 +56,5 @@ function controlla(){
 function generaNumero(a,b){
     /* estremo sueriore escluso*/
     let ris=Math.floor((b-a)*Math.random())+a;
-
-
     return ris;
 }
