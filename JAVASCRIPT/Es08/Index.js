@@ -43,6 +43,7 @@ function inizializza(){
 
 function confronta(){
 
+	let cont=0;
     let i=0;
     let carattere=_txtIns.value;
     if(carattere.length==1)
@@ -55,13 +56,12 @@ function confronta(){
             {
                 _txtCar[i].value=carattere;
                 _chkRis[i].checked=true;
+				cont++;
             }
         }
         punti-=5;
         _txtPunti.value=punti;
-        while(i<parolaSegreta.length && _chkRis[i].checked==true)
-            i++;
-        if(i==parolaSegreta.length && punti>0)
+        if(cont==parolaSegreta.length && punti>0)
         {
             alert("Hai vinto");
             _btnInvia.disabled=true;
