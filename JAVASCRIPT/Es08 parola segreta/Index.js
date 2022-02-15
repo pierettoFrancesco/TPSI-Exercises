@@ -2,7 +2,7 @@
 
 let vet=["Italia","Pizzeria","Calcio","Automobilismo","Lamborghini","Lavagna","Lasagna","Lampadario","Trucebaldazzi"]
 let parolaSegreta;
-let punti=100;
+let punti;
 let _txtPunti;
 let _txtCar;
 let _chkRis;
@@ -16,6 +16,7 @@ function inizializza(){
     parolaSegreta=vet[pos];
     parolaSegreta=parolaSegreta.toUpperCase();
     console.log(parolaSegreta);
+    punti=100;
 
     _txtPunti=document.getElementById("txtPunti");
     _txtPunti.value=punti;  //conversione stringa fatta in automatico
@@ -25,6 +26,8 @@ function inizializza(){
     _btnRisposta=document.getElementById("btnRisposta");
     _txtIns=document.getElementById("txtIns");
 
+    _btnInvia.disabled=false;
+    _btnRisposta.disabled=false;
     for(let i=0;i<_txtCar.length;i++)
     {
         _txtCar[i].readOnly=true;
@@ -36,44 +39,48 @@ function inizializza(){
         else
             _txtCar[i].value="";
     }
-    _btnInvia.disabled=false;
-    _btnRisposta.disabled=false;
+   
 
 }
 
 function confronta(){
 
-	let cont=0;
-    let i=0;
+    let cnt=0;
     let carattere=_txtIns.value;
     if(carattere.length==1)
     {
        
         carattere=carattere.toUpperCase();
-        for(i=0;i<parolaSegreta.length;i++)
+        for(let i=0;i<parolaSegreta.length;i++)
         {
             if(carattere==parolaSegreta[i])
             {
                 _txtCar[i].value=carattere;
                 _chkRis[i].checked=true;
-				cont++;
             }
         }
         punti-=5;
         _txtPunti.value=punti;
-        if(cont==parolaSegreta.length && punti>0)
-        {
-            alert("Hai vinto");
-            _btnInvia.disabled=true;
-            _btnRisposta.disabled=true;
-        }
-        else if(punti<=0)
+        if(punti<=0)
         {
             alert("Hai perso");
             _btnInvia.disabled=true;
             _btnRisposta.disabled=true;
         }
-            
+        else
+        {
+            for(let i=0;i<parolaSegreta.length;i++)
+            {
+                if(_chkRis[i].checked==true)
+                    cnt++;
+            }
+            if(cnt==parolaSegreta.length && punti>0)
+            {
+                alert("Hai vinto");
+                _btnInvia.disabled=true;
+                _btnRisposta.disabled=true;
+            }
+        }      
     }
     else
     {
@@ -102,15 +109,19 @@ function rispondi(){
         }
         else 
         {
-            alert("riprovare");
-             punti-=20;
-             _txtPunti.value=punti;
+            punti-=20;
+            _txtPunti.value=punti;
+            if(punti<=0){
+                alert("Hai perso");
+                _btnInvia.disabled=true;
+                _btnRisposta.disabled=true;
+            }
+            else{
+                alert("riprovare");
+            }
+           
         }
-        if(punti<=0){
-            alert("Hai perso");
-            _btnInvia.disabled=true;
-            _btnRisposta.disabled=true;
-        }
+       
     }
     else
     {
