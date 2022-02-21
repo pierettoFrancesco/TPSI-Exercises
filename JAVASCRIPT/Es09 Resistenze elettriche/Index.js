@@ -28,12 +28,14 @@ window.onload= function(){
         _lstFattore.innerHTML+=html;
     }
     _lstFattore.selectedIndex=-1;
+
+    let tolleranze=[]
+
 }
 
 function generaNumero(a,b){
     /* estremo sueriore escluso*/
     let ris=Math.floor((b-a)*Math.random())+a;
-
 
     return ris;
 }
