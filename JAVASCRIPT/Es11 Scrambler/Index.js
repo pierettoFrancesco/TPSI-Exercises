@@ -30,9 +30,36 @@ window.onload=function(){
 
 function scrambler(){
     _txt2.value="";
+    _txt1.value=_txt1.value.toUpperCase();
     for(let i=0;i<_txt1.value.length;i++)
     {
-        _txt2.value+=_txt1
+        let char=_txt1.value[i];
+        let pos=vet1.indexOf(char);
+        let char2;
+        if(pos!=-1){
+             char2=vet2[pos];
+        }
+        else
+            char2=char;
+        _txt2.value+=char2;
+        
+        //questa sol è logicamente corretta ma non funziona perchè le stringhe non posso essere modificate
+        //_txt2.value[i]=char2;
+    }
+}
+
+function descrambler(){
+    _txt1.value= "";
+    for(let i=0;i<_txt2.value.length;i++)
+    {
+        let char=_txt2.value[i];
+        let pos=vet2.indexOf(char);
+        let char2;
+        if(pos!=-1)
+            char2=vet1[pos];
+        else
+            char2=char;
+        _txt1.value+=char2;
     }
 }
 
