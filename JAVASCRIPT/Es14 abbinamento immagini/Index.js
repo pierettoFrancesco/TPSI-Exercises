@@ -11,7 +11,7 @@ let _optRisposta;
 let _txtCorrette;
 let _txtErrate;
 let pos;
-let vit, erra;
+let vit=0, erra=0;
 
 window.onload=function(){
     _img=document.getElementById("img");
@@ -39,8 +39,7 @@ window.onload=function(){
 
 function controlla(){
 
-    let i=0;
-    vit=0,erra=0;
+    let i=0,j=0;
 
     while(i<img1.length && _optRisposta[i].checked==false){
             i++;
@@ -50,22 +49,27 @@ function controlla(){
     else
     {
         _txtRisposta[i].value=_txtRisposta[i].value.toLowerCase();
-        if(_txtRisposta[i].value==img2[pos-1])
+        if(_txtRisposta[i].value==img2[pos-1] && i==pos-1)
         {
             vit++;
+			_txtCorrette.innerHTML="Risposte corrette: "+ vit;
             cancella();
-            pos=pos=generaNumero(1,11);
-            _img.src="img/img"+(pos)+" "+img1[pos-1]+".jpg";
-            _txt.value=img1[pos-1];
+			do{
+				j=generaNumero(1,11);
+			}while(pos==j);
+			pos=j;
+            _img.src="img/img"+(j)+" "+img1[j-1]+".jpg";
+            _txt.value=img1[j-1];
             for(let i=0;i<img1.length;i++){
                 _imgRisposta[i].src="img/img"+(i+1)+" "+img2[i]+".jpg";
             }
         }
-        else
+        else {
             erra++;
+			_txtErrate.innerHTML="Risposte errate: "+ erra;
+			alert("La risposta corretta era "+img2[pos-1]);
+		}
     }
-    _txtCorrette.innerHTML="Risposte corrette: "+ vit;
-    _txtErrate.innerHTML="Risposte errate: "+ erra;
 }
 
 function cancella(){
