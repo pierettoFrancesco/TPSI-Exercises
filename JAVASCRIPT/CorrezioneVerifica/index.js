@@ -109,6 +109,14 @@ function controlla(){
 	console.log("Vcont[indice] "+Vcont[indice]);
 	console.log("giuste "+giuste);
 	console.log(Vcont);
+	/*let trovato=false
+	for(let citta of _txtCitta)
+	{
+		if( citta.masked==nazione.innerHTML && citta.disabled==false)
+			trovato=true
+	} 
+	if(!trovato)
+	generare nazione*/
 	if(giuste==Vcont[indice])
 	{
 		let posFin= elencoUnivocoNazioni.indexOf(_txtNazione.innerHTML,0);
@@ -124,8 +132,11 @@ function controlla(){
 		if(_txtCitta[i].disabled==true)
 			vitt++;
 	}
-	if(vitt==_txtCitta.length)
+	if(vitt==_txtCitta.length){
 		alert("HAI VINTO");
+		_btnControlla.disabled=true;
+	}
+		
 	vitt=0;
 }
 

@@ -135,6 +135,13 @@ window.onload=function(){
                 alert("Ha vinto il banco, ha fatto piu' punti del giocatore");
             else if(_puntiB.innerHTML < _puntiG.innerHTML)
                 alert("Ha vinto il giocatore, ha fatto piu' punti del banco");
+			_btnB.removeEventListener("mouseover",MouseHover);
+            _btnB.removeEventListener("mouseout",MouseOut);
+            _btnG.removeEventListener("mouseover",MouseHover);
+            _btnG.removeEventListener("mouseout",MouseOut);
+            _btnG.removeEventListener("click",mazzoG);
+            _btnB.removeEventListener("click",mazzoB); 
+			_btnB.style.opacity="0.5";
         }
     }
     function MouseHover(){
