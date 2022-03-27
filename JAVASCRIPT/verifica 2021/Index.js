@@ -41,12 +41,10 @@ window.onload=function(){
 
 function seleziona(){
     for(let i=0;i<_txtCitta.length;i++)
-    {
         _optNazioni[i].disabled=false;
-        let pos=generaNumero(0,_txtCitta.length);
-        if(_txtCitta[pos].disabled==false)
-            _optCitta[pos].checked=true;
-    }
+	let pos=generaNumero(0,_txtCitta.length);
+    if(_txtCitta[pos].disabled==false)
+        _optCitta[pos].checked=true;
 }
 
 function controlla(){
