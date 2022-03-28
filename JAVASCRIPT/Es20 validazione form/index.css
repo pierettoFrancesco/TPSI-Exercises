@@ -53,3 +53,7 @@ input:last-of-type{
 .red-border {
   border-color: red;
 }
+
+#errori{
+   color:red;
+}

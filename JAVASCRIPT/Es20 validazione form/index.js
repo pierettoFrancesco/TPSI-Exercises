@@ -9,54 +9,114 @@ window.onload = function () {
     let _lstRegione = document.getElementById("regione");
 	let _chkLavoratore = document.getElementById("lavoratore");
     let _txtDescrizione = document.getElementById("descrizione");
-		
+	let _errori= document.getElementById("errori");
+	
+	//eventi textbox sono change e input
 	_txtMatricola.addEventListener("change", controllaMatricola)
 	_txtCognome.addEventListener("change", controllaCognome)
-	//_txtNome.addEventListener("change", controllaNome)
-	//_lstRegione.addEventListener("change", controllaRegione)
-	//_chkLavoratore.addEventListener("click", abilitaDescrizione)
+	_txtNome.addEventListener("change", controllaNome)
+	_lstRegione.addEventListener("change", controllaRegione)
+	_chkLavoratore.addEventListener("click", abilitaDescrizione)
 
-	
-	
-	//document.querySelector("input[type=button]").addEventListener("click", validaForm)
+	_lstRegione.selectedIndex=-1;
+
+	document.querySelector("input[type=button]").addEventListener("click", validaForm)
 
 	function controllaMatricola(){
-	
-		let cont=0;
-		for(let i=0;i<12;i++)
+		if(isDigit(_txtMatricola.value)==false || _txtMatricola.value.length != 12)
 		{
-			if(_txtMatricola[i].value>='0' && _txtMatricola[i].value<='9')
-				cont++
-		}
-		if(_txtMatricola.value==" " || cont!=12)
-		{
-			_txtMatricola.addClass("border-red");
+			_txtMatricola.classList.add("red-border");
+			return false;
 		}
 		else
-			_txtMatricola.removeClass("border-red");
+		{
+			_txtMatricola.classList.remove("red-border");
+			return true;
+		}
+			
+		
 	}
 
 	function controllaCognome(){
-
-		let flag=true;
-		let i=0;
-		if(_txtCognome.value!=" ")
+		if(_txtCognome.value== "" || isLetter(_txtCognome.value)==false)
 		{
-			while(i<12 && flag==true)
-			{
-				if(_txtCognome[i].value>='a' && _txtCognome[i].value || _txtCognome[i].value>='A' && _txtCognome[i].value<='Z')
-					flag=true;
-				else
-					flag=false;
-				i++
-			}
+			_txtCognome.classList.add("red-border");
+			return false;
 		}
 		else
-			flag=false;
-		if(flag==false)
-			_txtCognome.addClass("border-red");
+		{
+			_txtCognome.classList.remove("red-border");
+			return true;
+		}
+			
+	}
+
+	function controllaNome(){
+		if(_txtNome.value== "" || isLetter(_txtNome.value)==false)
+		{
+			_txtNome.classList.add("red-border");
+			return false;
+		}
 		else
-			_txtCognome.addClass("border-red");
+		{
+			_txtNome.classList.remove("red-border");
+			return true;
+		}
+			
+	}
+
+	function controllaRegione(){
+		if(_lstRegione.value!= "")
+			return true;
+		else
+			return false;
+	}
+
+	function abilitaDescrizione(){
+		if(_chkLavoratore.checked==true)
+		{
+			_txtDescrizione.disabled=false;
+			return true;
+		}	
+		else
+		{
+			_txtDescrizione.disabled=true;
+			return false;
+		}		
+	}
+
+	function validaForm(){
+		let genere =false;
+		let msg="";
+		for(let i=0;i<_optGenere.length;i++)
+		{
+			if(_optGenere[i].checked==true)
+				genere=true;
+		}
+		let aus=true;
+		if(abilitaDescrizione())
+		{
+			if(_txtDescrizione.value=="")
+				aus=false;
+		}
+
+		if(!controllaMatricola())
+			msg+="la matricola inserita non è corretta<br>";
+		if(!controllaCognome())
+			msg+="Il cognome inserito non è corretto<br>";
+		if(!controllaNome())
+			msg+="Il nome inserito non è corretto<br>";
+		if(!genere)
+			msg+="Non hai selezionato il genere<br>";
+		if(controllaRegione()==false)
+			msg+="Non hai selezionato nessuna regione<br>";
+		if(aus==false)
+			msg+="Non hai scritto niente nella descrizione del lavoro";
+		if(msg=="")
+			alert("Non hai fatto errori");
+		else
+			_errori.innerHTML = msg;
+
 	}
 }
 

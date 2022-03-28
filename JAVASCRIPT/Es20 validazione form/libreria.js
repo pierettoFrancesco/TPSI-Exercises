@@ -4,16 +4,20 @@ function generaNumero(a, b){
 }
 
 function isDigit(s){
-    for(i=0; i<s.length; i++){
-	   if(!(s[i]>="0" &&  s[i]<="9"))
-		   return false
+	let esci=false;
+	let i=0;
+	while(i<s.length && !esci)
+	{
+	    if(!(s[i]>="0" &&  s[i]<="9"))
+		   esci=true;
+		i++;
     }
-	return true;   
+	return !esci;   
 }
 
 function isLetter(s){
     for(i=0; i<s.length; i++){
-	   if(!(s[i]>="a" &&  s[i]<="z" || s[i]>="A" &&  s[i]<="Z" ))
+	   if(!(s[i]>="a" &&  s[i]<="z" || s[i]>="A" &&  s[i]<="Z" || s[i]==' '))
 		   return false
     }
 	return true;      
