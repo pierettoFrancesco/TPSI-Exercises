@@ -1,13 +1,12 @@
 "use strict"
 
 const dim=3;
-let cont;
+let cont=0;
 
 window.onload=function(){
 
     let _table=document.getElementsByTagName("table")[0];
     let _ris=document.getElementById("divRisultato");
-    cont=0;
 
     for(let i=0;i<dim;i++)
     {
@@ -16,39 +15,32 @@ window.onload=function(){
         {
             let _td=document.createElement("td");
             let _img=document.createElement("img");
-            _img.classList.add("img");
+            //_img.classList.add("img");
             _img.id="img-"+i+"-"+j;
             _img.innerHTML="&nbsp";
+            _tr.appendChild(_td);
             _td.appendChild(_img);
             _img.src="img/vuota.png";
-            _img.addEventListener("click", imgClick);
-            _tr.appendChild(_td);
-            console.log(_img);
+            _img.addEventListener("click", visual);
+            
         }
         _table.appendChild(_tr);
     }
 
-    function imgClick(){
+    function visual(){
         
-        if(cont%2==0)
+        if(cont==1)
         {
-            if(this.src=="img/vuota.png")
-            {
-                this.src="img/croce.png";
-                cont++;
-            }
+            this.src="img/croce.png";
+            cont=2;
         }
         else
         {
-            if(this.src=="img/vuota.png")
-            {
-                this.src="img/cerchio.png";
-                cont++;
-            }
+            this.src="img/cerchio.png";
+            cont=1;
         }
-        if(cont==9){
-            _ris.innerHTML="PAREGGIO";
-        }
+        this.removeEventListener("click",visual);
+        controllaVincita()
     }
 }
 function generaNumero(a,b){
