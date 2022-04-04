@@ -28,20 +28,106 @@ window.onload=function(){
     }
 
     function visual(){
-        
-        if(cont==1)
+        let aus=this.id.split("-");
+        let r=parseInt(aus[1]);
+        let c=parseInt(aus[2]);
+
+        if(cont%2==0)
         {
             this.src="img/croce.png";
-            cont=2;
+            cont++;
         }
         else
         {
             this.src="img/cerchio.png";
-            cont=1;
+            cont++;
         }
         this.removeEventListener("click",visual);
-        controllaVincita()
+        controllaVincita(r,c);
+        if(cont==9)
+            _ris.innerHTML="PAREGGIO";
     }
+
+    function controllaVincita(i,j){
+        let cont = 0;
+		let cont1 = 0;
+		for(let k = 0;k < 3;k++)
+		{
+			let immagine = document.getElementById(`img-${k}-${j}`)
+			if(immagine.src.includes("croce"))
+			   cont++;
+			else if(immagine.src.includes("cerchio"))
+				cont1++;
+		}
+		if(cont == 3)
+		   _ris.textContent = "Ha vinto il giocatore 1"
+		else if(cont1 == 3)
+		   _ris.textContent = "Ha vinto il giocatore 2"
+		else
+	    {
+			cont = 0;
+			cont1 = 0;
+		}
+		for(let k = 0;k < 3;k++)
+		{
+			let immagine = document.getElementById(`img-${i}-${k}`)
+			if(immagine.src.includes("croce"))
+			   cont++;
+			else if(immagine.src.includes("cerchio"))
+			   cont1++;
+		}
+		if(cont == 3)
+		   _ris.textContent = "Ha vinto il giocatore 1"
+		else if(cont1 == 3)
+		   _ris.textContent = "Ha vinto il giocatore 2"
+		else
+	    {
+			cont = 0;
+			cont1 = 0;
+		}
+		for(let k = 0;k < 3;k++)
+		{
+			let immagine = document.getElementById(`img-${k}-${k}`)
+			if(immagine.src.includes("croce"))
+			   cont++;
+			else if(immagine.src.includes("cerchio"))
+			   cont1++;
+		}
+		if(cont == 3)
+		   _ris.textContent = "Ha vinto il giocatore 1"
+		else if(cont1 == 3)
+		   _ris.textContent = "Ha vinto il giocatore 2"
+		else
+	    {
+			cont = 0;
+			cont1 = 0;
+		}
+		for(let k = 0;k < 3;k++)
+		{
+			for(let m = 0;m < 3;m++)
+			{
+				if(k + m == 2)
+				{
+					let immagine = document.getElementById(`img-${k}-${m}`)
+			        if(immagine.src.includes("croce"))
+			           cont++;
+			        else if(immagine.src.includes("cerchio"))
+			           cont1++;
+				}
+
+			}
+		}
+		if(cont == 3)
+		   _ris.textContent = "Ha vinto il giocatore 1"
+		else if(cont1 == 3)
+		   _ris.textContent = "Ha vinto il giocatore 2"
+		else
+	    {
+			cont = 0;
+			cont1 = 0;
+		}
+    }   
+        
 }
 function generaNumero(a,b){
     /* estremo sueriore escluso*/
