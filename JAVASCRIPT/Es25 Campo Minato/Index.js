@@ -1,36 +1,37 @@
 "use strict"
 
 let dim=5;
+let turno=0;
 window.onload = function(){
-    let _button
+    let _btn
     let _wrapper = document.getElementById("wrapper")
     for(let i = 0;i < dim;i++)
     {
         for(let j = 0;j < dim;j++)
         {
-            _button =  document.createElement("button");
-            _wrapper.append(_button)
-            _button.id = "button-" + i + "-" + j
-            _button.bomba = false
-            _button.addEventListener("click", controlla)
+            _btn =  document.createElement("button");
+            _wrapper.append(_btn)
+            _btn.id = "button-" + i + "-" + j
+            _btn.bomba = false
+            _btn.addEventListener("click", controlla)
         }
     }
 
     for(let i = 0;i < dim;i++)
     {
-        let r = generaNumero(0,5)
-        let c = generaNumero(0,5)
-        _button = document.getElementById("button-" + r + "-" + c)
-        if(_button.bomba == false)
-            _button.bomba = true
-        else
-            i--
+        do{
+            let r = generaNumero(0,5)
+            let c = generaNumero(0,5)
+            _btn = document.getElementById("button-" + r + "-" + c)
+        }while(_btn.bomba==true)
+        _btn.bomba=true;
     }
 
     function controlla() {
         let aus=this.id.split("-");
-        let r=aus[1];
-        let c=aus[2];
+        let r=parseInt(aus[1]); // vettore di stringhe quindi devo fare  parse int
+        let c=parseInt(aus[2]);
+        let cont=0;
         if(this.bomba == true)
         {
            this.style.backgroundImage = "url(bomba.png)"
@@ -39,7 +40,43 @@ window.onload = function(){
         }
         else
         {
-            
+            if(r>0)
+            {
+                if(document.getElementById("button-" + (r-1) + "-" + c).bomba==true)
+                    cont++;
+            }
+            if(r<4)
+            {
+                if(document.getElementById("button-" + (r+1) + "-" + c).bomba==true)
+                    cont++;
+            }
+            if(c>0)
+            {
+                if(document.getElementById("button-" + (r) + "-" + (c-1)).bomba==true)
+                    cont++;
+            }
+            if(c<4)
+            {
+                if(document.getElementById("button-" + (r) + "-" + (c+1)).bomba==true)
+                    cont++;
+            }
+            if(cont==0)
+            {
+                this.innerHTML="X";
+            }
+            else
+            {
+                this.innerHTML=cont;
+                this.style.color="red";
+                this.style.fontWeight="bold";
+            }
+            this.disabled=true;
+            turno++;
+            if(turno==20)
+            {
+                alert("Hai vinto");
+                disabilita();
+            }
         }
     }
 
