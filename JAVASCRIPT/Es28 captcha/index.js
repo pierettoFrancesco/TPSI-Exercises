@@ -36,8 +36,10 @@ window.onload = function(){
 
 
 	function finale() {
-		if(_img.src==`img/ok.png` && _txtUser.style.borderColor!="red" && _txtPwd.style.borderColor!="red")
+		if(_img.src=="file:///C:/Users/frank/OneDrive/Documenti/GitHub/TPSI-Exercises/JAVASCRIPT/Es28%20captcha/img/ok.png" && _txtUser.style.borderColor!="red" && _txtPwd.style.borderColor!="red")
 			window.location.href = "pagina2.html"
+		else
+			alert("Hai sbagliato a compilare");
 	}
 
 	function nonSonoUnRobot(){
