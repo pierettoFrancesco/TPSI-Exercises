@@ -1,14 +1,10 @@
-------------------------------------------
- CREDITS
-------------------------------------------
+===================================================================
+Plugins Used
+===================================================================
+Lightbox 2 - http://lokeshdhakar.com/projects/lightbox2/
 
-    - Bootstrap 5    -    https://getbootstrap.com
-
-    - Font Awesome   -    https://fontawesome.com
-
-
-------------------------------------------
- IMAGES
-------------------------------------------
-
-    - Images used from  -  freepik.com
+===================================================================
+Photos
+===================================================================
+David Schiersner - https://www.flickr.com/photos/freaky_designz/
+Martina Photography
