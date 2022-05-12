@@ -576,7 +576,13 @@ progress {
 
 .list-inline-item {
   display: inline-block;
+  color: #1ed761;
 }
+
+.list-inline-item:hover {
+  color: #fff;
+}
+
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
 }
