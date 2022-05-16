@@ -33,8 +33,8 @@ window.onload= function(){
         livello++;
         if(livello==5) //perche' arriva al centro
         {
-            clearInterval(timerID);
-            timerID=setInterval(visualizza,500);
+            //clearInterval(timerID);
+            //timerID=setInterval(visualizza,500);
             livello=0;
         }
     }
@@ -48,9 +48,6 @@ window.onload= function(){
         }
     }
 }	
-
-
-
 
 
 function generaNumero(min, max){
