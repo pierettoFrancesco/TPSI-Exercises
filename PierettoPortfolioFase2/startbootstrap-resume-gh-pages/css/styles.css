@@ -11492,3 +11492,49 @@ section.resume-section .resume-section-content {
   padding-top: 20px;
  }
 }
+
+.nba{
+  width:150px;
+  height: 300px;
+  margin-right: 15px;
+  background-size:contain;
+  float:left;
+}
+
+.basket{
+  padding-top:75px;
+}
+
+@media(max-width: 600px){
+  .nba{
+    width:200px;
+    height: 400px;
+  }
+
+  .basket{
+    padding-top:35px;
+  }
+}
+
+#musica a, #formazione a, #hobby a, #viaggi a{
+  color: #6c757d;
+  font-size: 0.875em;
+  font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.rap{
+  float:right;
+  padding-bottom: 40px;
+  margin-left: 15px;
+}
+
+.lago{
+  width:350px;
+  height: 300px;
+  float:left;
+  margin-right: 15px;
+  margin-top: 10px;
+}
