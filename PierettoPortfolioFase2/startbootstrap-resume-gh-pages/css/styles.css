@@ -11538,3 +11538,26 @@ section.resume-section .resume-section-content {
   margin-right: 15px;
   margin-top: 10px;
 }
+
+/*
+*
+=====================
+CONTACT SECTION
+=====================
+*
+*/
+.contact-form {
+  margin-bottom: 40px;
+}
+
+.btn {
+    color: #fff;
+    background-color: #1ed761;
+    margin-top: 10px;
+}
+
+.btn:hover {
+  color: #1ed761;
+  background-color: #fff;
+  margin-top: 10px;
+}

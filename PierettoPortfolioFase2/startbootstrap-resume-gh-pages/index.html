@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#hobby">Hobby</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#musica">Musica</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#viaggi">Viaggi</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#consigli">Consigli</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contatti">contatti</a></li>
                 </ul>
             </div>
         </nav>
@@ -179,52 +179,54 @@
                 </div>
             </section>
             <hr class="m-0" />
-            <!--Consigli-->
-            <section class="resume-section" id="consigli">
+            <!--Contatti-->
+            <section class="resume-section" id="contatti">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
+                    <h2 class="mb-5">Contatti</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Ciao, qui come puoi vedere è presente un form da compilare, in caso vorresti un aiuto o avresti bisogno di contattarmi, fallo! In poco tempo ti risponderò e cercherò di aiutarti.</p>
+                                    <p>Tra i campi da compilare troverai nome, cognome, email e uno spazio dedicato a scrivere la tua richiesta. Inoltre se non vorrai compilare il form potrai comunque contattarmi utilizzando i link che trovi nella Home page del sito. Spero di aver detto tutto, arrivederci e buon proseguimento. </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <form id="contact-form" method="post" action="#" class="contact-form">
+                                        <div class="controls">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                    <label for="name">Nome *</label>
+                                                    <input type="text" name="name" placeholder="Inserisci il tuo nome" required="required" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                    <label for="surname">Cognome *</label>
+                                                    <input type="text" name="surname" placeholder="Inserisci il tuo cognome" required="required" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="surname">Email *</label>
+                                                <input type="email" name="email" placeholder="Inserisci email" required="required"  class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="surname">Messaggio *</label>
+                                                 <textarea rows="4" name="message" placeholder="Inserisci un messaggio" required="required" class="form-control"></textarea>
+                                            </div>
+                                            <div class="text-center">
+                                                <input type="submit" name="name" value="Send message" class="btn">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>         
+                             </div> 
+                        </div>
+                    </div>
                 </div>
             </section>
+            
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
