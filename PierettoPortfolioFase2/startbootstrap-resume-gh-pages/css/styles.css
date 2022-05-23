@@ -11493,22 +11493,38 @@ section.resume-section .resume-section-content {
  }
 }
 
+.stadio{
+  width:400px;
+  height: 250px;
+  background-size:cover;
+  float:right;
+  margin-left: 10px;
+}
+
+@media(max-width: 600px){
+  .stadio{
+    float: left;
+    margin-left: 2px;
+  }
+}
+
 .nba{
-  width:150px;
-  height: 300px;
+  width:350px;
+  height: 200px;
   margin-right: 15px;
-  background-size:contain;
+  background-size:cover;
   float:left;
 }
 
 .basket{
-  padding-top:75px;
+  padding-top:5px;
 }
+
 
 @media(max-width: 600px){
   .nba{
-    width:200px;
-    height: 400px;
+    width:400px;
+    height: 200px;
   }
 
   .basket{
@@ -11553,11 +11569,11 @@ CONTACT SECTION
 .btn {
     color: #fff;
     background-color: #1ed761;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .btn:hover {
   color: #1ed761;
   background-color: #fff;
-  margin-top: 10px;
+  margin-top: 15px;
 }
