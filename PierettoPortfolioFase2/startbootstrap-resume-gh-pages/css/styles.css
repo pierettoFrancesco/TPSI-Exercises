@@ -11577,3 +11577,14 @@ CONTACT SECTION
   background-color: #fff;
   margin-top: 15px;
 }
+
+.page-two{
+  background-color: #000;
+}
+
+.pageTwo{
+  color:#1ed761;
+  font-family: sans-serif;
+  font-size: 30pt;
+  text-align: left;
+}

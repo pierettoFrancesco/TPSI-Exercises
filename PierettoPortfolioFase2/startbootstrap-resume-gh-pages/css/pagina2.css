@@ -1,0 +1,16 @@
+
+
+  body{
+        background-color: #000;
+  }
+
+  .pageTwo{
+    color:#1ed761;
+    font-family: sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    margin:10px auto;
+    width:100%;
+    height: 100%;
+   
+  }
