@@ -11468,7 +11468,7 @@ section.resume-section .resume-section-content {
 
 @media (max-width: 950px) {
   .presentation{
-   margin: 5px auto;
+   margin: 15px auto;
    height: 250px;
    width:250px;
    background-size: contain;
@@ -11476,13 +11476,14 @@ section.resume-section .resume-section-content {
 
  .present{
   padding-top: 20px;
+ 
  }
 
 }
 
 @media (max-width: 1200px) {
   .presentation{
-   margin: 5px auto;
+   margin: 15px auto;
    height: 300px;
    width:300px;
    background-size: contain;
@@ -11490,6 +11491,7 @@ section.resume-section .resume-section-content {
 
  .present{
   padding-top: 20px;
+  padding-left: 15px;
  }
 }
 
